@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+
+:root{
+    --background-color: #1B262C;
+    --primary-background-color: #EFF2F4;
+    --font-color: #5D7285;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+ background-color: var(--background-color);
+ min-height: 100vh;
+}
+
+.container{
+    display: inline-flex;
+    flex-direction: column;
+    width: 270px;
+    height: 100vh;
+    background-color: var(--primary-background-color);
+    gap: 2.8rem;
+    border-radius: 0 5px 5px 0;
+}
+
+.header{
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 2px solid #1B262C;
+}
+li a{
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--font-color);
+    transition: all 100ms;
+}
+.nav-link{
+    display: flex;
+    gap: .8rem;
+}
+.item-icon svg{
+    width: 23px;
+    height: 24px;
+}
+
+li :hover{
+    background-color: #0C7FDA;
+    border-radius: .5rem;
+    opacity: .7;
+    color: white;
+}
+
